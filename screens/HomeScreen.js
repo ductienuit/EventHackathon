@@ -43,8 +43,10 @@ export default class HomeScreen extends React.Component {
         require('../assets/images/iot.png'),
         require('../assets/images/bigdata.png'),
         require('../assets/images/industry.png'),
-        require('../assets/images/bigdata.png'),
-        require('../assets/images/iot.png'),
+        require('../assets/images/nonprofit.png'),
+        require('../assets/images/transport.png'),
+        require('../assets/images/blockchain.png'),
+        require('../assets/images/seemore.png'),
       ],
     };
 
@@ -73,10 +75,10 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-          <View style={{ flexDirection: 'row', backgroundColor:'#123' }}>
-            <Image source={require('../assets/images/banner.png')} style={{
-              flex: 1,
-              resizeMode: 'contain'
+          <View style={{ flexDirection: 'row', justifyContent:'center'}}>
+            <Image source={require('../assets/images/test.png')} style={{
+              flex:1,
+              resizeMode:'contain'
             }} />
           </View>
           <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
