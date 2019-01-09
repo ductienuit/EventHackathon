@@ -5,7 +5,7 @@ import {
   ScrollView,
   StyleSheet,
   Text,
-  TouchableOpacity,
+  TouchableHighlight,
   View,
   Dimensions
 } from 'react-native';
@@ -52,6 +52,7 @@ export default class HomeScreen extends React.Component {
 
     this._renderItem = this._renderItem.bind(this);
     this._keyExtractor = this._keyExtractor.bind(this);
+    this._onPressButton = this._onPressButton.bind(this);
   }
 
   _renderItem = data => {
@@ -70,17 +71,22 @@ export default class HomeScreen extends React.Component {
   _keyExtractor(item, soundID) {
     return `sound-item-${soundID}`;
   }
+  _onPressButton(){
+    this.props.navigation.navigate("EventDetail");
+  }
 
   render() {
     return (
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-          <View style={{ flexDirection: 'row', justifyContent:'center'}}>
-            <Image source={require('../assets/images/test.png')} style={{
-              flex:1,
-              resizeMode:'contain'
-            }} />
-          </View>
+          <TouchableHighlight onPress={this._onPressButton}>
+            <View style={{ flexDirection: 'row', justifyContent:'center'}}>
+              <Image source={require('../assets/images/test.png')} style={{
+                flex:1,
+                resizeMode:'contain'
+              }}/>
+            </View>
+          </TouchableHighlight>
           <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
             <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', width: 270 }}>
               <Text style={{ backgroundColor: '#C4C4C4', width: 85, height: 2.5 }} />
