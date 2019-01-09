@@ -5,7 +5,7 @@ import {
   ScrollView,
   StyleSheet,
   Text,
-  TouchableHighlight,
+  TouchableOpacity,
   View,
   Dimensions
 } from 'react-native';
@@ -79,14 +79,14 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-          <TouchableHighlight onPress={this._onPressButton}>
+          <TouchableOpacity onPress={this._onPressButton}>
             <View style={{ flexDirection: 'row', justifyContent:'center'}}>
               <Image source={require('../assets/images/test.png')} style={{
                 flex:1,
                 resizeMode:'contain'
               }}/>
             </View>
-          </TouchableHighlight>
+          </TouchableOpacity>
           <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
             <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', width: 270 }}>
               <Text style={{ backgroundColor: '#C4C4C4', width: 85, height: 2.5 }} />
