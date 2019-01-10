@@ -199,6 +199,7 @@ export default class EventDetail extends React.Component {
 
             <Text style={{
               marginTop:8,
+              marginRight:16,
               fontFamily: "roboto-regular",
               fontSize: 14,
               color:'rgba(92, 92, 92, 0.6)'
@@ -246,7 +247,7 @@ export default class EventDetail extends React.Component {
           </View>
 
           {/* Agenda*/}
-          <View style={{ marginLeft: 16, marginTop: 16 }}>
+          <View style={{ marginLeft: 16, marginTop: 16, marginRight:16, }}>
             <Text style={{
               fontFamily: "roboto-medium",
               fontSize: 14,
@@ -323,7 +324,7 @@ export default class EventDetail extends React.Component {
               fontFamily: "roboto-regular",
               fontSize: 14,
               color:'#2196F3',    
-            }}>View full rules</Text>
+            }}>View full information</Text>
           </View>
         </View>
        
