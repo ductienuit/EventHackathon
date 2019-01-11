@@ -147,7 +147,7 @@ export default class EventDetail extends React.Component {
                   {/* Join */}
               <Text style={{
                 borderRadius:7,
-                backgroundColor:'#3EC26B', 
+                backgroundColor:'#2196F3', 
                 fontSize:16, 
                 fontFamily:'roboto-medium',
                 textAlign:'center',
